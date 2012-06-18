@@ -1,0 +1,8 @@
+.multi-tag ul li{
+    list-style: none;
+    cursor:     pointer;
+}
+
+.multi-tag ul li.multi-tag-item-selected {
+    color: #08C;
+}

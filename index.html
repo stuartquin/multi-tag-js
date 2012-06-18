@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Tag Select</title>
+    <link rel="stylesheet" href="multitag.css" />
+</head>
+<body>
+
+<div>
+    <a href="#" id="menu-link">Menu</a>
+    <div id="menu">
+        <ul>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link C</li>
+            <li>Link D</li>
+        </ul>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+        </ul>
+        <ul>
+            <li>Link 4</li>
+            <li data-value="link_five">Link 5</li>
+            <li>Link 6</li>
+        </ul>
+    </div>
+</div>
+
+<script type='text/javascript' src='jquery.js'></script>
+<script type='text/javascript' src='multitag.js'></script>
+
+<script type='text/javascript'>
+var tags = null;
+
+$(document).ready( function(){
+    tags = new MultiTag('menu', {
+        toggle: function(value, event){
+            $('#console').html( value );
+            console.log( this.getSelected() );
+        }
+    });
+});
+</script>
+</body>
+</html>
