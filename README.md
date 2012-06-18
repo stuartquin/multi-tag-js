@@ -1,4 +1,17 @@
 multi-tag-js
 ============
 
-Turn lists into selectable items, supports multiple selections
+Turns one or more unordered lists (`ul`) into grids of selectable key words
+
+## Requires
+jquery.js
+
+## Usage
+
+## Styling
+
+## Todo
+
+* Maximum selected option
+* First In - First out on Maximum Selected
+* Finish This doc
